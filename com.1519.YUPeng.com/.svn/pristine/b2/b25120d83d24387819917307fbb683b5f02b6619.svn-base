@@ -1,0 +1,118 @@
+//
+//  Define.h
+//  com.1519.YUPeng
+//
+//  Created by qianfeng on 16/2/24.
+//  Copyright © 2016年 yupengpeng. All rights reserved.
+//
+
+#ifndef Define_h
+#define Define_h
+
+//封面图 以及猴年第一游
+//http://m.springtour.com/Home/AppIndex/GetStartImage
+//[自由行]支持机票任意搭配
+//http://au.umeng.com/api/check_app_update
+//招聘 优惠 更多
+//http://api.o2o.lianwifi.com/client/status.do
+//首页 及 国内    长白山 泰国
+//http://m.springtour.com/home/apphome/index?version=6.7.2&orderFrom=5&startCityId=61
+//上海重庆
+//http://m.springtour.com/home/appflight/GetSpecialFlight?orderFrom=5
+//热门城市
+//http://m.springtour.com/Home/AppFlight/Cities?categoryId=0&orderFrom=5
+//图标以及上海周济
+//http://m.springtour.com/home/appflight/GetSpecialFlight?orderFrom=5
+//樱花季
+//http://hd.springtour.com/Index/SearchLineByID?lineId=10760&callback=jsonp1
+//价格
+//http://m.springtour.com/Home/AppSearch/JavaSearchNew?startCitys=%E4%B8%8A%E6%B5%B7&orderFrom=5&systemType=-1&keywords=%E6%97%A5%E6%9C%AC&page=2
+//价格行程详情
+//http://m.springtour.com/home/appnewtour/detail?orderFrom=5&systemType=2&routeId=29283
+//签证
+//http://m.springtour.com/Home/AppSearch/JavaSearchNew?startCitys=%E4%B8%8A%E6%B5%B7&orderFrom=5&systemType=-1&keywords=%E7%AD%BE%E8%AF%81&page=1&productType=14
+//签证详情
+//http://m.springtour.com/home/AppVisa/ProductInfo?productId=6566&orderFrom=5&routeId=6566
+//门票
+//http://m.springtour.com/home/appticket/index?orderFrom=5&startCityId=61
+//国内
+//http://m.springtour.com/home/appindex/AllPageInlandPlay?orderFrom=5&startCityId=61
+//国内专题详情
+//http://m.springtour.com/Home/AppSearch/JavaSearchNew?startCitys=%E4%B8%8A%E6%B5%B7&orderFrom=5&systemType=0&keywords=%E6%B5%B7%E5%8D%97&page=1
+//首页第二个界面
+//http://m.springtour.com/Home/AppSearch/JavaSearchNew?startCitys=%E4%B8%8A%E6%B5%B7&orderFrom=5&systemType=-1&keywords=%E9%95%BF%E7%99%BD%E5%B1%B1&page=3
+//长白山2
+//http://m.springtour.com/Home/AppSearch/JavaSearchNew?startCitys=%E4%B8%8A%E6%B5%B7&orderFrom=5&systemType=-1&keywords=%E9%95%BF%E7%99%BD%E5%B1%B1&page=2
+//长白山3
+//http://m.springtour.com/Home/appnewvacation/NewVacationProductInfo?hasOTAFlight=true&orderFrom=5&systemType=2&productid=42189
+
+
+#define SPRINGAPI @"http://m.springtour.com/Home/AppIndex/GetStartImage"
+
+//#define ZIYOUAPI @"http://au.umeng.com/api/check_app_update"
+
+//#define YOUHUIAPI @"http://api.o2o.lianwifi.com/client/status.do"
+//首页 及 国内    长白山 泰国
+#define SHOUYEAPI @"http://m.springtour.com/home/apphome/index?version=6.7.2&orderFrom=5&startCityId=61"
+//上海重庆
+#define SHANGHAIAPI @"http://m.springtour.com/home/appflight/GetSpecialFlight?orderFrom=5"
+
+//热门城市
+#define  REMENAPI @"http://m.springtour.com/Home/AppFlight/Cities?categoryId=0&orderFrom=5"
+//图标以及上海周济
+#define TUBIAOAPI @"http://m.springtour.com/home/appflight/GetSpecialFlight?orderFrom=5"
+
+//樱花季
+#define YINGHUAAPI @"http://hd.springtour.com/Index/SearchLineByID?lineId=10760&callback=jsonp1"
+
+//价格
+#define JIAGEAPI @"http://m.springtour.com/Home/AppSearch/JavaSearchNew?startCitys=%E4%B8%8A%E6%B5%B7&orderFrom=5&systemType=-1&keywords=%E6%97%A5%E6%9C%AC&page=2"
+
+//价格行程详情
+#define XINGCHENGAPI @"http://m.springtour.com/home/appnewtour/detail?orderFrom=5&systemType=2&routeId=29283"
+
+//签证
+#define QIANZHENGAPI @"http://m.springtour.com/Home/AppSearch/JavaSearchNew?startCitys=%E4%B8%8A%E6%B5%B7&orderFrom=5&systemType=-1&keywords=%E7%AD%BE%E8%AF%81&page=1&productType=14"
+
+//签证详情
+#define QIANXIANGAPI @"http://m.springtour.com/home/AppVisa/ProductInfo?productId=6566&orderFrom=5&routeId=6566"
+//门票
+#define MENPIAOAPI @"http://m.springtour.com/home/appticket/index?orderFrom=5&startCityId=61"
+//国内
+#define GUONEIAPI @"http://m.springtour.com/home/appindex/AllPageInlandPlay?orderFrom=5&startCityId=61"
+
+//国内专题详情
+#define ZHUANXIANGAPI @"http://m.springtour.com/Home/AppSearch/JavaSearchNew?startCitys=%E4%B8%8A%E6%B5%B7&orderFrom=5&systemType=0&keywords=%E6%B5%B7%E5%8D%97&page=1"
+//首页第二个界面
+#define DIERJIMIANAPI @"http://m.springtour.com/Home/AppSearch/JavaSearchNew?startCitys=%E4%B8%8A%E6%B5%B7&orderFrom=5&systemType=-1&keywords=%E9%95%BF%E7%99%BD%E5%B1%B1&page=3"
+//长白山2
+#define CHANGTWO @"http://m.springtour.com/Home/AppSearch/JavaSearchNew?startCitys=%E4%B8%8A%E6%B5%B7&orderFrom=5&systemType=-1&keywords=%E9%95%BF%E7%99%BD%E5%B1%B1&page=2"
+//长白山3
+#define CHANGTHREEAPI @"http://m.springtour.com/Home/appnewvacation/NewVacationProductInfo?hasOTAFlight=true&orderFrom=5&systemType=2&productid=42189"
+//目的地 第一个界面
+#define MDDAPI @"http://m.springtour.com/home/appdestination/GetDestinationInfo?orderFrom=5&startCityId=61"
+//目的地头界面
+#define TOUJIEMIANAPI @"http://m.springtour.com/Home/AppSearch/JavaSearchNew?startCitys=%E4%B8%8A%E6%B5%B7&orderFrom=5&systemType=-1&keywords=%E4%B8%8A%E6%B5%B7&page=1"
+//目的地头界面详情
+#define TOUXIANGAPI @"http://m.springtour.com/home/appnewtour/detail?orderFrom=5&systemType=2&routeId=12628"
+//目的地详情界面
+#define MUXIANGQINGAPI @"http://m.springtour.com/home/appdestination/GetDestinationDetail?orderFrom=5&startCityId=61&locationId=20938"
+
+//目的地 第一个界面
+//http://m.springtour.com/home/appdestination/GetDestinationInfo?orderFrom=5&startCityId=61
+//目的地头界面
+//http://m.springtour.com/Home/AppSearch/JavaSearchNew?startCitys=%E4%B8%8A%E6%B5%B7&orderFrom=5&systemType=-1&keywords=%E4%B8%8A%E6%B5%B7&page=1
+//目的地头界面详情
+//http://m.springtour.com/home/appnewtour/detail?orderFrom=5&systemType=2&routeId=12628
+//目的地详情界面 日本
+//http://m.springtour.com/home/appdestination/GetDestinationDetail?orderFrom=5&startCityId=61&locationId=20938
+//目的地详情界面 三亚
+//http://m.springtour.com/home/appdestination/GetDestinationDetail?orderFrom=5&startCityId=61&locationId=20949
+//目的地详情界面 泰国
+//http://m.springtour.com/home/appdestination/GetDestinationDetail?orderFrom=5&startCityId=61&locationId=20979
+//http://m.springtour.com/Home/AppSearch/JavaSearchNew?startCitys=%E4%B8%8A%E6%B5%B7&orderFrom=5&systemType=-1&keywords=%E6%9D%AD%E5%B7%9E&page=1
+//最后界面
+//http://m.springtour.com/home/appnewtour/detail?orderFrom=5&systemType=2&routeId=36304
+
+
+#endif /* Define_h */

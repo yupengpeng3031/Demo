@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="abcCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="198" height="114"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="198" height="114"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yLe-ZL-WQC">
+                        <rect key="frame" x="8" y="8" width="180" height="74"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoy-1h-dv2">
+                        <rect key="frame" x="18" y="85" width="170" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xoy-1h-dv2" secondAttribute="trailing" constant="10" id="84s-rz-2WU"/>
+                <constraint firstAttribute="bottom" secondItem="xoy-1h-dv2" secondAttribute="bottom" constant="8" id="FM0-1K-mKz"/>
+                <constraint firstItem="yLe-ZL-WQC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="KKW-G3-JHR"/>
+                <constraint firstItem="xoy-1h-dv2" firstAttribute="top" secondItem="yLe-ZL-WQC" secondAttribute="bottom" constant="3" id="bfy-ju-zHj"/>
+                <constraint firstItem="xoy-1h-dv2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="18" id="fwx-YW-2BW"/>
+                <constraint firstAttribute="trailing" secondItem="yLe-ZL-WQC" secondAttribute="trailing" constant="10" id="kO7-7p-ggG"/>
+                <constraint firstItem="yLe-ZL-WQC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="o7d-6k-33y"/>
+            </constraints>
+            <size key="customSize" width="198" height="114"/>
+            <connections>
+                <outlet property="imageview" destination="yLe-ZL-WQC" id="tDi-PH-YYf"/>
+                <outlet property="namelabel" destination="xoy-1h-dv2" id="C3S-Ue-4rp"/>
+            </connections>
+            <point key="canvasLocation" x="553" y="297"/>
+        </collectionViewCell>
+    </objects>
+</document>

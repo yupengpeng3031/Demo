@@ -1,0 +1,16 @@
+//
+//  main.m
+//  com.1519.YUPeng
+//
+//  Created by qianfeng on 16/2/24.
+//  Copyright © 2016年 yupengpeng. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "AppDelegate.h"
+
+int main(int argc, char * argv[]) {
+    @autoreleasepool {
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+    }
+}
