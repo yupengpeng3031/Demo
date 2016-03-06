@@ -1,0 +1,77 @@
+//
+//  BaseTabBarViewController.m
+//  com.1519.YUPeng
+//
+//  Created by qianfeng on 16/2/24.
+//  Copyright © 2016年 yupengpeng. All rights reserved.
+//
+
+#import "BaseTabBarViewController.h"
+#import "FirstViewController.h"
+#import "DstinationViewController.h"
+#import "ContectViewController.h"
+#import "YearViewController.h"
+@interface BaseTabBarViewController ()
+
+@end
+
+@implementation BaseTabBarViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    [self createViewController];
+
+}
+-(void)createViewController {
+    
+    FirstViewController *FVC = [[FirstViewController alloc]init];
+    UIImage *image = [[UIImage imageNamed:@"nav_one_off"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage *endImage = [[UIImage imageNamed:@"nav_one_on"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UITabBarItem *item = [[UITabBarItem alloc]initWithTitle:@"首页" image:image selectedImage:endImage];
+    FVC.tabBarItem = item;
+    UINavigationController *NFVC = [[UINavigationController alloc]initWithRootViewController:FVC];
+    
+    DstinationViewController *DVC = [[DstinationViewController alloc]init];
+    UIImage *dstinationImage = [[UIImage imageNamed:@"subtab_0_off"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage *endDstinationImage = [[UIImage imageNamed:@"subtab_0_on"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UITabBarItem *dstintionItem = [[UITabBarItem alloc]initWithTitle:@"目的地" image:dstinationImage selectedImage:endDstinationImage];
+    DVC.tabBarItem = dstintionItem;
+    UINavigationController *NDVC = [[UINavigationController alloc]initWithRootViewController:DVC];
+    
+    ContectViewController *CVC = [[ContectViewController alloc]init];
+    UIImage *contectImage = [[UIImage imageNamed:@"nav_four_off"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage *endContectImage = [[UIImage imageNamed:@"nav_four_on"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UITabBarItem *contectItem = [[UITabBarItem alloc]initWithTitle:@"联系我们" image:contectImage selectedImage:endContectImage];
+    CVC.tabBarItem = contectItem;
+    UINavigationController *NCVC = [[UINavigationController alloc]initWithRootViewController:CVC];
+    
+    YearViewController *YVC = [[YearViewController alloc]init];
+    UIImage *yearImage = [[UIImage imageNamed:@"nav_three_off"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage *endYearImage = [[UIImage imageNamed:@"nav_three_on"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UITabBarItem *yearItem = [[UITabBarItem alloc]initWithTitle:@"我的春秋" image:yearImage selectedImage:endYearImage];
+    YVC.tabBarItem = yearItem;
+    UINavigationController *NYVC = [[UINavigationController alloc]initWithRootViewController:YVC];
+    
+    NSArray *tabbarSubViews = @[NFVC,NDVC,NCVC,NYVC];
+    
+    self.viewControllers = tabbarSubViews;
+    
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end
